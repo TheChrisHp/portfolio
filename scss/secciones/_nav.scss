@@ -1,0 +1,18 @@
+nav {
+  border: solid 1px #fff;
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+  }
+}

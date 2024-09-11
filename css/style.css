@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif; }
+
+.bg-landing {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+  background-color: #1a1a1a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.cont-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #fff; }
+  .cont-info h1 {
+    color: #fff;
+    margin-bottom: 10px; }
+  .cont-info h3 {
+    color: #fff; }
+
+.cont-personal {
+  width: 820px; }
+
+.cont-proyectos {
+  border: solid #fff 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .cont-proyectos .title-proyectos {
+    display: flex;
+    justify-content: center;
+    padding: 1.4rem; }
+    .cont-proyectos .title-proyectos h1 {
+      font-size: 2.6rem;
+      color: #fff; }
+
+.cont-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+  width: 1400px; }
+
+.separador {
+  border: solid 1px #808080;
+  margin: 10px 0px 10px; }
+
+.cards-proyectos {
+  border: solid 1px #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  flex-basis: 300px;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 350px;
+  height: 420px;
+  color: #fff;
+  background-color: #171717;
+  cursor: pointer; }
+  .cards-proyectos .cont-top-card {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .cards-proyectos .cont-top-card img {
+      width: 347px;
+      height: 200px;
+      border-radius: 4px; }
+  .cards-proyectos .cont-bottom-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem; }
+    .cards-proyectos .cont-bottom-card h4 {
+      margin-top: 6px;
+      font-weight: 600; }
+
+.cont-tecnologias {
+  padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px; }
+
+nav {
+  border: solid 1px #fff;
+  padding: 1rem; }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px; }
+    nav ul li {
+      list-style: none; }
+    nav ul a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #fff; }
