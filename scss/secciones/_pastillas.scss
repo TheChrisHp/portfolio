@@ -1,0 +1,105 @@
+.cont-pastillas {
+  display: flex;
+  gap: 17px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding: 17px 16px;
+  gap: 5px;
+  height: 32px;
+  width: 162px;
+  //   border: none;
+  border: solid 1px #b6b6b663;
+  background: var(--color-negro);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  i {
+    color: var(--color-blanco);
+  }
+}
+
+.lable {
+  line-height: 22px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-blanco);
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: var(--color-blanco);
+
+  .lable {
+    color: var(--color-negro);
+  }
+}
+.button:hover .fa-brands.fa-linkedin-in {
+  color: var(--color-negro);
+}
+.button:hover .fa-solid.fa-envelope {
+  color: var(--color-negro);
+}
+.button:hover .svg-icon {
+  animation: lr 1s linear infinite;
+}
+
+.codepen-button {
+  display: block;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  font-weight: 60;
+  border-radius: 100px;
+  overflow: hidden;
+  padding: 2px;
+  isolation: isolate;
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg, #d1d1d1, #127b02, #8cfd7a);
+  background-size: 25% 100%;
+  animation: hola 4s linear infinite;
+  animation-play-state: running;
+  translate: -5% 0%;
+  transition: translate 4s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 4s;
+  translate: 0% 0%;
+}
+
+@keyframes hola {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 1rem 1.5rem;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #0b5200;
+  border-radius: 100px;
+  height: 32px;
+  width: 162px;
+}

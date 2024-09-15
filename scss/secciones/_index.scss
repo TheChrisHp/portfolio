@@ -14,28 +14,54 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.bg-landing2 {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    rgba(124, 198, 119, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .cont-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px #fff;
+  // border: solid 1px $blanco;
 
   h1 {
-    color: #fff;
+    color: var(--color-blanco);
+    font-size: 2.6rem;
     margin-bottom: 10px;
   }
   h3 {
-    color: #fff;
+    margin-top: 10px;
+    color: var(--color-blanco);
   }
 }
 
 .cont-personal {
   width: 820px;
+  padding: 0.6rem;
+}
+
+.cont-personal-img {
+  img {
+    width: 100px;
+    border-radius: 20%;
+  }
 }
 
 .cont-proyectos {
-  border: solid #fff 1px;
+  // border: solid $blanco 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,8 +73,8 @@
     justify-content: center;
     padding: 1.4rem;
     h1 {
-      font-size: 2.6rem;
-      color: #fff;
+      font-size: 3rem;
+      color: var(--color-blanco);
     }
   }
 }
@@ -62,6 +88,7 @@
   margin: 0 auto;
   gap: 20px;
   width: 1400px;
+  padding: 1rem;
 }
 
 .separador {
@@ -70,7 +97,7 @@
 }
 
 .cards-proyectos {
-  border: solid 1px #fff;
+  border: solid 1px var(--color-blanco);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   display: flex;
@@ -83,6 +110,11 @@
   color: #fff;
   background-color: #171717;
   cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 
   .cont-top-card {
     display: flex;
@@ -112,4 +144,28 @@
   justify-content: center;
   align-items: baseline;
   gap: 20px;
+}
+
+.cont-title-sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  h1 {
+    font-size: 3rem;
+    color: var(--color-blanco);
+  }
+}
+
+.cont-text-about {
+  margin: auto;
+  width: 1000px;
+  padding: 1rem;
+
+  p {
+    margin-bottom: 17px;
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+  }
 }

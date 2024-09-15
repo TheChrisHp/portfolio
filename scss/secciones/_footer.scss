@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+
+  .cont-footer1 {
+    color: var(--color-blanco);
+
+    a {
+      text-decoration: none;
+      color: var(--color-blanco);
+      margin-left: 12px;
+    }
+  }
+}
