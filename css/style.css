@@ -342,7 +342,11 @@ footer {
   .cont-text-about {
     width: 400px; }
   .cont-info h3 {
-    width: 370px; } }
+    width: 370px; }
+  .cont-proyectos .title-proyectos h1 {
+    font-size: 2.2rem; }
+  .cont-title-sobremi h1 {
+    font-size: 2.2rem; } }
 
 @media (max-width: 418px) {
   nav ul {
@@ -357,6 +361,15 @@ footer {
     font-size: 0.9rem; }
   .cont-pastillas {
     margin-bottom: 10px;
-    gap: 6px; }
+    gap: auto; }
   .cont-info h1 {
-    margin-left: 6px; } }
+    margin-left: 6px; }
+  .button {
+    height: 28px;
+    width: 117px; }
+  .codepen-button {
+    height: 28px;
+    width: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
