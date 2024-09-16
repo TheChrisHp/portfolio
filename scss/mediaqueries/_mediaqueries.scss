@@ -38,6 +38,11 @@
     .button{
         width: 154px;
     }
+
+    footer{
+        justify-content: center;
+        margin: auto;
+    }
 }
 
 @media (max-width: 550px){
@@ -71,15 +76,49 @@
     }
     footer{
         max-width: 900px;
-        padding: 2rem;
+        padding: 1rem;
+    }
+    footer .cont-footer1{
+        margin-top: 10px;
     }
     // .cont-sobremi{
     //     display: none;
     // }
 }
 
-@media (max-width: 375px){
+@media (max-width: 500px){
+    nav ul a{
+        font-size: 1rem;
+    }
     .cont-text-about{
-        width: 200px;
+        width: 400px;
+    }
+    .cont-info h3{
+        width: 370px;
     }
 }
+
+@media (max-width: 418px){
+    nav ul{
+        gap: 17px;
+    }
+    .cont-text-about{
+        width: 383px;
+    }
+    .cont-personal{
+        width: 380px;
+    }
+    .cont-info h3{
+        width: 360px;
+        margin: auto;
+        font-size: 0.9rem;
+    }
+    .cont-pastillas{
+        margin-bottom: 10px;
+        gap: 6px;
+    }
+    .cont-info h1{
+        margin-left: 6px;
+    }
+}
+
