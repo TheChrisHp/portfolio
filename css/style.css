@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Onest", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 .bg-landing {
   position: absolute;
   top: 0;
@@ -174,7 +177,7 @@ footer {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  padding: 2rem; }
+  padding: 3rem; }
   footer .cont-footer1 {
     color: var(--color-blanco); }
     footer .cont-footer1 a {
@@ -267,7 +270,7 @@ footer {
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 1px;
-  background: #0b5200;
+  background: #128400;
   border-radius: 100px;
   height: 32px;
   width: 162px; }
