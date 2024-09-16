@@ -175,6 +175,7 @@ nav {
 footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
   padding: 3rem; }
@@ -278,3 +279,58 @@ footer {
 :root {
   --color-blanco: #dbdbdb;
   --color-negro: #171717; }
+
+@media (max-width: 1000px) {
+  .cont-text-about {
+    width: 800px; }
+    .cont-text-about p {
+      font-size: 1rem; } }
+
+@media (max-width: 800px) {
+  .cont-text-about {
+    width: 600px; }
+    .cont-text-about p {
+      font-size: 1rem; } }
+
+@media (max-width: 650px) {
+  .cont-personal-img {
+    display: none; }
+  .cont-text-about {
+    width: 500px; }
+  .cont-info h3 {
+    font-size: 1rem;
+    width: 530px; }
+  .cont-personal {
+    width: 560px;
+    padding: 0; }
+  .button {
+    width: 154px; } }
+
+@media (max-width: 550px) {
+  .cont-personal {
+    width: auto; }
+  .cont-info h1 {
+    font-size: 2rem; }
+  .cont-info h3 {
+    width: 412px;
+    font-size: 1rem; }
+  .codepen-button span {
+    width: 120px;
+    height: 32px;
+    font-size: 12px; }
+  .codepen-button {
+    padding: 0; }
+  .button {
+    padding: 0;
+    width: 120px; }
+    .button .lable {
+      font-size: 12px; }
+  .cont-text-about {
+    width: 450px; }
+  footer {
+    max-width: 900px;
+    padding: 2rem; } }
+
+@media (max-width: 375px) {
+  .cont-text-about {
+    width: 200px; } }
